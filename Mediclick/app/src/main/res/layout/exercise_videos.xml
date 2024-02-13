@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Exercise Input Section -->
+    <TextView
+        android:id="@+id/textViewExercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Exercise:"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextExercise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewExercise"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Type exercise name here"
+        android:minHeight="48dp" />
+
+    <!-- YouTube Player View -->
+    <Button
+        android:id="@+id/buttonPlayVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Play Video" />
+
+
+
+    <!-- Play Video Button -->
+
+</RelativeLayout>

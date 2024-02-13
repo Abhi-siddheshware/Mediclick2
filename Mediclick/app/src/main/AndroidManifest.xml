@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Mediclick"
+        tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.youtube.API_KEY"
+            android:value="YOUR_YOUTUBE_API_KEY" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HealthTipsActivity"
+            android:label="Health Tips">
+        </activity>
+        <activity
+            android:name=".NutritionalAnalysis"
+            android:label="Nutritional Analysis">
+        </activity>
+        <activity
+            android:name=".ExerciseResources"
+            android:label="Exercise Resources">
+        </activity>
+        <activity
+            android:name=".WeatherTips"
+            android:label="Weather Tips">
+        </activity>
+        <activity
+            android:name=".YogaAndMeditation"
+            android:label="Yoga and Meditation">
+        </activity>
+        <activity
+            android:name=".NA1"
+            android:exported="false"
+            android:label="Nutritional Analysis 1">
+        </activity>
+        <activity
+            android:name=".NA2"
+            android:label="Nutritional Analysis 2">
+        </activity>
+        <activity
+            android:name=".NA3"
+            android:label="Nutritional Analysis 3">
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
